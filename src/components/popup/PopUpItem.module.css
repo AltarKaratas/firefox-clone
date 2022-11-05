@@ -1,0 +1,16 @@
+.text {
+  font-size: 0.5rem;
+}
+.pop-up-item {
+  text-align: center;
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+  border: 0 white solid;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.menu-icons {
+  display: inline;
+  float: left;
+}

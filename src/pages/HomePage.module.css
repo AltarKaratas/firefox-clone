@@ -1,0 +1,93 @@
+.splitcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.flogo {
+  transform: scale(0.5);
+}
+.logocontainer {
+  margin-bottom: 2rem;
+}
+.firstsection {
+  background: rgb(255, 213, 95);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 213, 95, 1) 0%,
+    rgba(254, 161, 0, 1) 46%,
+    rgba(255, 124, 0, 1) 100%
+  );
+  padding: 5vw 12vw;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0 0 0.5em;
+}
+.moztext {
+  margin: 0 0 1.25em;
+  padding: 0;
+}
+.logo {
+  display: block;
+  height: 40px;
+  width: 217px;
+}
+.button {
+  margin: 0 0 1rem;
+  padding: 6px 24px;
+  border-color: #fea100;
+  border: 2px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5;
+  text-decoration: none;
+  background-color: #0060df;
+  transition: background-color 0.1s, box-shadow 0.1s, color 0.1s;
+  transition-property: background-color, box-shadow, color;
+  transition-duration: 0.1s, 0.1s, 0.1s;
+  transition-timing-function: ease, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  z-index: 0;
+  position: absolute;
+  align-items: center;
+  padding: 0 12vw;
+}
+.backgroundsecondary {
+  background-color: #f9f9fb;
+  position: relative;
+  height: 18rem;
+  margin-top: 30vh;
+  z-index: -1;
+  padding-bottom: 192px;
+}
+.imgcontainer {
+  margin-top: -200px;
+  max-height: 100%;
+}
+.secondsection {
+  margin-top: 5vh;
+}
+.treeimage {
+  width: 528px;
+  height: 528px;
+}
+.text {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 15px;
+}
+.power {
+  text-align: center;
+  font-size: 2rem;
+}
