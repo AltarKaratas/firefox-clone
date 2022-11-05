@@ -1,121 +1,104 @@
 .footer {
-    color:white;
-    clear: both;
-    background-color: black;
-    width: 100%;
+  color: white;
+  clear: both;
+  background-color: black;
+  width: 100%;
 }
 .outerdiv {
-    max-width: 1660px;
-    width: 100%;
-    margin:0 auto
+  max-width: 1660px;
+  width: 100%;
+  margin: 0 auto;
 }
 .gridfirefox {
-    height: 5rem;
-    background-color: black;
-    margin: 0 12vw;
-    padding-top: 25px;
+  height: 5rem;
+  background-color: black;
+  margin: 0 10vw;
+  padding-top: 25px;
 }
 .footergrid {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    margin: 0 12vw;
-    gap: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 10vw;
+  gap: 80px;
+  border-bottom: 1px gray solid;
 }
-@media (max-width:820px) {
-    .footergrid {
-        display:grid;
-        grid-template-columns: repeat(2,1fr);
-    }
+@media (max-width: 820px) {
+  .footergrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .mozlogo {
-    display:inline-block;
-    background: url("https://www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor-white.8e4c6167b986.svg");
-    background-size: 100px 32px;
-    height:32px ;
-    width: 100px;
+  display: inline-block;
+  background: url("https://www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor-white.8e4c6167b986.svg");
+  background-size: 100px 32px;
+  height: 32px;
+  width: 100px;
 }
-
 
 .legaldiv {
-    padding-bottom: 5vh;
+  padding-bottom: 5vh;
 }
 
-li{
-    margin-bottom: 8px;
+li {
+  margin-bottom: 8px;
 }
-.listitem{
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: underline;
+.listitem {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: underline;
 }
-.secondfooter{
-    font-size: 0.6rem;
-    margin: 0 12vw;
-    color:white;
+.secondfooter {
+  font-size: 0.6rem;
+  margin: 0 10vw;
 }
-.ullist {
-    padding-left: 0;
-}
-.divideline {
-    margin: 0 12vw;
-    margin-top: 20px;
-    height: 1px;
-    width: 80%;
-    background-color: gray;
-
-}
-
-
-
-
-
 
 .twitterlink {
-    display: inline-block;
-    color:white;
-    height: 16px;
-    width: 16px;
-    background-image: url("https://www.mozilla.org/media/protocol/img/icons/social/twitter/white.79fc9d8867ed.svg");
-    margin: 0 5px;
+  display: inline-block;
+  color: white;
+  height: 16px;
+  width: 16px;
+  background-image: url("https://www.mozilla.org/media/protocol/img/icons/social/twitter/white.79fc9d8867ed.svg");
+  margin: 0 5px;
 }
 .instagramlink {
-    display: inline-block;
-    color:white;
-    padding: 0;
-    height: 16px;
-    width: 16px;
-    background-image: url("https://www.mozilla.org/media/protocol/img/icons/social/instagram/white.a7014a6150b3.svg");   
-    margin: 0 5px;
+  display: inline-block;
+  color: white;
+  padding: 0;
+  height: 16px;
+  width: 16px;
+  background-image: url("https://www.mozilla.org/media/protocol/img/icons/social/instagram/white.a7014a6150b3.svg");
+  margin: 0 5px;
 }
 .spotifylink {
-    display: inline-block;
-    color:white;
-    height: 16px;
-    width: 16px;
-    background-image: url("https://www.mozilla.org/media/img/logos/social/spotify-white.aa5334e85bae.svg");
-    margin: 0 5px;
+  display: inline-block;
+  color: white;
+  height: 16px;
+  width: 16px;
+  background-image: url("https://www.mozilla.org/media/img/logos/social/spotify-white.aa5334e85bae.svg");
+  margin: 0 5px;
 }
 .tiktoklink {
-    display: inline-block;
-    color:white;
-    height: 16px;
-    width: 16px;
-    background-image: url("https://www.mozilla.org/media/img/logos/social/tiktok-white.599403de7ac0.svg");
-    margin: 0 5px;
+  display: inline-block;
+  color: white;
+  height: 16px;
+  width: 16px;
+  background-image: url("https://www.mozilla.org/media/img/logos/social/tiktok-white.599403de7ac0.svg");
+  margin: 0 5px;
 }
 .linkedinlink {
-    display: inline-block;
-    color:white;
-    height: 16px;
-    width: 16px;
-    background-image: url("https://www.mozilla.org/media/img/logos/social/linkedin-white.cdc0e910cc1e.svg");
-    margin: 0 5px;
+  display: inline-block;
+  color: white;
+  height: 16px;
+  width: 16px;
+  background-image: url("https://www.mozilla.org/media/img/logos/social/linkedin-white.cdc0e910cc1e.svg");
+  margin: 0 5px;
 }
 .youtubelink {
-    display: inline-block;
-    color:white;
-    height: 16px;
-    width: 16px;
-    background-image: url("https://www.mozilla.org/media/protocol/img/icons/social/youtube/white.4f314c43c69d.svg");
-    margin: 0 5px;
+  display: inline-block;
+  color: white;
+  height: 16px;
+  width: 16px;
+  background-image: url("https://www.mozilla.org/media/protocol/img/icons/social/youtube/white.4f314c43c69d.svg");
+  margin: 0 5px;
 }

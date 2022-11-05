@@ -4,7 +4,6 @@ import classes from "./Footer.module.css";
 
 const Footer = (props) => {
   return (
-    <Fragment>
       <footer className={classes.footer}>
         <div className={classes.outerdiv}>
           <nav>
@@ -13,7 +12,7 @@ const Footer = (props) => {
             </div>
             <div className={classes.footergrid}>
               <div>
-                <h5 className={classes.gridh5}>Company</h5>
+                <h5>Company</h5>
                 <ul className={classes.gridlist}>
                   <li>Mozilla Manifesto</li>
                   <li>Press Center</li>
@@ -24,7 +23,7 @@ const Footer = (props) => {
                 </ul>
               </div>
               <div>
-                <h5 className={classes.gridh5}>Resources</h5>
+                <h5>Resources</h5>
                 <ul className={classes.gridlist}>
                   <li>Privacy Hub</li>
                   <li>Browser Comparison</li>
@@ -32,14 +31,14 @@ const Footer = (props) => {
                 </ul>
               </div>
               <div>
-                <h5 className={classes.gridh5}>Support</h5>
+                <h5>Support</h5>
                 <ul className={classes.gridlist}>
                   <li>Product Help</li>
                   <li>File a bug</li>
                 </ul>
               </div>
               <div>
-                <h5 className={classes.gridh5}>Resources</h5>
+                <h5>Resources</h5>
                 <ul className={classes.gridlist}>
                   <li>Developer Edition</li>
                   <li>Beta</li>
@@ -70,7 +69,6 @@ const Footer = (props) => {
               </div>
             </div>
           </nav>
-          <div className={classes.divideline}></div>
           <nav className={classes.secondfooter}>
             <div></div>
             <div className={classes.legaldiv}>
@@ -95,7 +93,6 @@ const Footer = (props) => {
           </nav>
         </div>
       </footer>
-    </Fragment>
   );
 };
 export default Footer;

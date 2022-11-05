@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className={classes.home}>
       <section className={classes.firstsection}>
         <div className={classes.splitcontainer}>
-          <img src={svg} alt="selam" />
+          <img className={classes.img} src={svg} alt="selam" />
           <div className={classes.splitbody}>
             <div className={classes.logocontainer}>
               <img
@@ -29,6 +29,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      
       <section className={classes.secondsection}>
         <div className={classes.backgroundsecondary}>
           <div className={classes.grid}>
