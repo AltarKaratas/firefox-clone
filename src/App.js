@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch, Redirect } from "react-router-dom";
+import { useContext } from "react";
+
+import HomePage from "./pages/HomePage";
+import Layout from "./components/layout/Layout";
+import HeaderPopUp from "./components/popup/HeaderPopUp";
+import uiContext from "./store/ui-context";
 
 function App() {
+  const uiCtx = useContext(uiContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/home" exact>
+            <HomePage />
+            { uiCtx.popUpState && <HeaderPopUp data={uiCtx.popUpSelect.data} portal={uiCtx.popUpSelect.id} />}
+          </Route>
+          <Route path="*">
+            <Redirect to="/home" />
+          </Route>
+        </Switch>
+      </Layout>
+    </>
   );
 }
 
