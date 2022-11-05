@@ -7,7 +7,7 @@ const Footer = (props) => {
     <Fragment>
       <footer className={classes.footer}>
         <div className={classes.outerdiv}>
-          <nav className={classes.footernav}>
+          <nav>
             <div className={classes.gridfirefox}>
               <a className={classes.mozlogo}></a>
             </div>
@@ -56,7 +56,7 @@ const Footer = (props) => {
                   <li className={classes.twitterlink}>
                     <a href="https://twitter.com"></a>
                   </li>
-                  <li className={classes.instagramlink}>    </li>
+                  <li className={classes.instagramlink}> </li>
                   <li className={classes.linkedinlink}></li>
                   <li className={classes.tiktoklink}></li>
                   <li className={classes.spotifylink}></li>
@@ -74,15 +74,23 @@ const Footer = (props) => {
           <nav className={classes.secondfooter}>
             <div></div>
             <div className={classes.legaldiv}>
-                <ul className={classes.ullist}>
-                    <li className={classes.listitem}>Website Privacy Notice</li>
-                    <li className={classes.listitem}>Cookies</li>
-                    <li className={classes.listitem}>Legal</li>
-                    <li className={classes.listitem}>Community Participation Guidelines</li>
-                    <li className={classes.listitem}>About this site</li>
-                </ul>
-                <p>Visit <a>Eldek Corporation</a></p>
-                <p>Portions of this content are ©1998–2022 by individual mozilla.org contributors. Content available under a Creative Commons license.</p>
+              <ul className={classes.ullist}>
+                <li className={classes.listitem}>Website Privacy Notice</li>
+                <li className={classes.listitem}>Cookies</li>
+                <li className={classes.listitem}>Legal</li>
+                <li className={classes.listitem}>
+                  Community Participation Guidelines
+                </li>
+                <li className={classes.listitem}>About this site</li>
+              </ul>
+              <p>
+                Visit <a>Eldek Corporation</a>
+              </p>
+              <p>
+                Portions of this content are ©1998–2022 by individual
+                mozilla.org contributors. Content available under a Creative
+                Commons license.
+              </p>
             </div>
           </nav>
         </div>

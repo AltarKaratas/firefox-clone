@@ -19,15 +19,14 @@ const MainNavigation = (props) => {
       data: event.target.attributes.data.nodeValue,
       id: event.target.id,
     });
-    console.log(event);
   };
 
   return (
     <header className={classes.header}>
       <nav className={classes.nav}>
-        <div className={classes.container}>
-          <div className={classes["img-container"]}>
-            <img
+        <div  className={classes.container}>
+          <div  className={classes["img-container"]}>
+            <img onClick={homePageNavigation}
               className={classes["main-img"]}
               src="https://www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor.e20791bb4dd4.svg"
             />
