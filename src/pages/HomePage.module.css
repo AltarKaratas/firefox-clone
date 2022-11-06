@@ -1,4 +1,4 @@
-.splitcontainer {
+.block-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -8,17 +8,17 @@
 }
 
 @media (max-width:820px) {
-  .splitcontainer {
+  .block-container {
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 }
 
-.home {
+.main-container {
   margin: auto;
 }
-.img {
+.block-image {
   display: flex;
   margin: auto;
 }
@@ -33,7 +33,7 @@
 .flogo {
   transform: scale(0.5);
 }
-.firstsection {
+.first-section {
   background: linear-gradient(
     90deg,
     rgba(255, 213, 95, 1) 0%,

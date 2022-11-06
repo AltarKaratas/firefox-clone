@@ -6,12 +6,12 @@ import svg from "../firefox.svg";
 
 const HomePage = () => {
   return (
-    <div className={classes.home}>
-      <section className={classes.firstsection}>
-        <div className={classes.splitcontainer}>
-          <img className={classes.img} src={svg} alt="selam" />
-          <div className={classes.splitbody}>
-            <div className={classes.logocontainer}>
+    <div className={classes["main-container"]}>
+      <section className={classes["first-section"]}>
+        <div className={classes["block-container"]}>
+          <img className={classes["block-image"]} src={svg} alt="selam" />
+          <div>
+            <div className={classes["logocontainer"]}>
               <img
                 className={classes.logo}
                 src={

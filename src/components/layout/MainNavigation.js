@@ -15,6 +15,7 @@ const MainNavigation = (props) => {
 
   const togglePopUp = (event) => {
     uiCtx.togglePopUpFn();
+    console.log(event);
     uiCtx.popUpDataFn({
       data: event.target.attributes.data.nodeValue,
       id: event.target.id,
@@ -35,8 +36,7 @@ const MainNavigation = (props) => {
             <div className={classes["link-container"]}>
               <Link
                 id="pop-up-fb"
-                onMouseOver={togglePopUp}
-                onMouseLeave={togglePopUp}
+               onClick={togglePopUp}
                 data={0}
                 className={classes.navlink}
                 to="/Products"
@@ -48,8 +48,7 @@ const MainNavigation = (props) => {
               <Link
                 id="pop-up-products"
                 className={classes.navlink}
-                onMouseOver={togglePopUp}
-                onMouseOut={togglePopUp}
+                onClick={togglePopUp}
                 data={1}
                 to="/home"
               >
@@ -60,8 +59,8 @@ const MainNavigation = (props) => {
               <Link
                 id="pop-up-about"
                 className={classes.navlink}
-                onMouseOver={togglePopUp}
-                onMouseOut={togglePopUp}
+                onClick={togglePopUp}
+               
                 data={2}
                 to="/home"
               >

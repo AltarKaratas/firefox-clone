@@ -10,13 +10,15 @@ import uiContext from "../../store/ui-context";
 const HeaderPopUp = (props) => {
   return (
     <div>
-      {ReactDOM.createPortal(<PopUp data={props.data} />, document.getElementById(props.portal))}
+      {ReactDOM.createPortal(
+        <PopUp data={props.data} />,
+        document.getElementById(props.portal)
+      )}
     </div>
   );
 };
 
 export const PopUp = (props) => {
-
   const uiCtx = useContext(uiContext);
 
   const dataArray = DUMMY_DATA[props.data];
@@ -30,16 +32,15 @@ export const PopUp = (props) => {
       />
     );
   });
-  //   return (uiCtx.popUpState ?
-  //     <div className={classes["popup-container"]}>
-  //       <ul>{menuItems}</ul>
-  //     </div>
-  //     :
-  //     <span></span>
-  //   );
+
   return (
     <div className={classes.container}>
-      <ul className={classes["popup-container"]}>{menuItems}</ul>
+      <ul className={classes["popup-container"]}>
+        {menuItems}
+      </ul>
+      <div className={classes["button-container"]}>
+          <button className={classes["menu-button"]} >View all Firefox Browsers</button>
+        </div>
     </div>
   );
 };
