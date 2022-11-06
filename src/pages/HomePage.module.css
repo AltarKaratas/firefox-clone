@@ -82,17 +82,13 @@ h2 {
   }
 }
 
-.secondsection{
-}
-.backgroundsecondary {
-}
 .imgcontainer {
   max-height: 100%;
 }
 
 .treeimage {
-  width: 528px;
   height: 528px;
+  margin: auto;
 }
 .text {
   text-align: center;
