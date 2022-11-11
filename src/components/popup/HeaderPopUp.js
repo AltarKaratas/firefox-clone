@@ -34,14 +34,14 @@ export const PopUp = (props) => {
   });
 
   return (
-    <div className={classes.container}>
-      <ul className={classes["popup-container"]}>
-        {menuItems}
-      </ul>
-      <div className={classes["button-container"]}>
-          <button className={classes["menu-button"]} >View all Firefox Browsers</button>
+      <div className={classes.container}>
+        <ul className={classes["popup-container"]}>{menuItems}</ul>
+        <div className={classes["button-container"]}>
+          <button className={classes["menu-button"]}>
+            View all Firefox Browsers
+          </button>
         </div>
-    </div>
+      </div>
   );
 };
 

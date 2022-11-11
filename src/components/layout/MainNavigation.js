@@ -13,16 +13,19 @@ const MainNavigation = (props) => {
     history.push("/");
   };
 
-  const togglePopUp = (event) => {
+  const openPopUp = (event) => {
     uiCtx.togglePopUpFn();
-    console.log(event);
     uiCtx.popUpDataFn({
       data: event.target.attributes.data.nodeValue,
       id: event.target.id,
     });
   };
+  
+  
+
 
   return (
+    <div className={classes["header-layout"]}>
     <header className={classes.header}>
       <nav className={classes.nav}>
         <div  className={classes.container}>
@@ -36,7 +39,7 @@ const MainNavigation = (props) => {
             <div className={classes["link-container"]}>
               <Link
                 id="pop-up-fb"
-               onClick={togglePopUp}
+                onClick={openPopUp}
                 data={0}
                 className={classes.navlink}
                 to="/Products"
@@ -48,7 +51,7 @@ const MainNavigation = (props) => {
               <Link
                 id="pop-up-products"
                 className={classes.navlink}
-                onClick={togglePopUp}
+                onClick={openPopUp}
                 data={1}
                 to="/home"
               >
@@ -59,8 +62,7 @@ const MainNavigation = (props) => {
               <Link
                 id="pop-up-about"
                 className={classes.navlink}
-                onClick={togglePopUp}
-               
+                onClick={openPopUp}
                 data={2}
                 to="/home"
               >
@@ -79,6 +81,7 @@ const MainNavigation = (props) => {
         </div>
       </nav>
     </header>
+    </div>
   );
 };
 export default MainNavigation;

@@ -1,20 +1,25 @@
 .popup-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    margin: 20px;
 }
 .popup-ul{
     margin-left: 0;
     padding-left: 0;
 }
+.header-pop-up {
+    padding:100px;
+}
+
 .container {
     position: absolute;
     background-color: rgb(247, 247, 247,1);
     margin-top: 2.5vh;
     padding:1rem;
+    z-index: 100;
     border: 2px white solid;
     border-radius:8px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .button-container {
     text-align: center;
